@@ -12,14 +12,16 @@ public class Main {
     public static void main(String[] args) {
         double salary = 30000;//应发工资
         double freeLine = 5000; //每月减免
-        double insurance = 4500; //三险一金
-        double children = 1000;//子女
+        double insurance = 3500; //三险一金
+        double children = 0;//子女
         double oldman = 1000;//老人
+        double rent = 0;//租房
+        double loans = 1000;//房贷
 
         int month = 12; //第几个月
         double totalTax = 0; //累计预扣预缴税
         for (int i = 1; i <= month; i++) {
-            double sum = (salary - freeLine - insurance - children - oldman) * i; //累计预扣预缴应纳税所得额
+            double sum = (salary - freeLine - insurance - children - oldman - rent - loans) * i; //累计预扣预缴应纳税所得额
             double fast = 0; //速算扣除数
             double rate = 0.03; //预扣率
 
