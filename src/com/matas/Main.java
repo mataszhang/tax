@@ -12,9 +12,9 @@ public class Main {
     public static void main(String[] args) {
         double salary = 30000;//应发工资
         double freeLine = 5000; //每月减免
-        double insurance = 3500; //三险一金
+        double insurance = 1400; //三险一金
         double children = 0;//子女
-        double oldman = 1000;//老人
+        double oldman = 0;//老人
         double rent = 0;//租房
         double loans = 1000;//房贷
 
@@ -50,7 +50,8 @@ public class Main {
 
             double preTax = sum * rate - fast - totalTax;
             totalTax += preTax;
-            System.err.println("第" + i + "个月应预扣预缴税=>" + preTax + " ，到目前共预缴税=>" + totalTax);
+            double daoshou = salary - preTax - insurance;
+            System.err.println("第" + i + "个月应预扣预缴税=>" + preTax + " 到手工资=>" + daoshou + "，到目前共预缴税=>" + totalTax);
         }
     }
 }
