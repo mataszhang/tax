@@ -1,5 +1,5 @@
 # coding:utf-8
-salary = 30000  # 应发工资
+salary = 30000  # 税前工资
 freeLine = 5000  # 每月减免【固定】
 insurance = 1400  # 三险一金【公积金+医保】
 children = 0  # 子女

@@ -10,7 +10,7 @@ public class Main {
      * @date 2018/12/31 18:37
      */
     public static void main(String[] args) {
-        double salary = 30000;//应发工资
+        double salary = 30000;//税前工资
         double freeLine = 5000; //每月减免【固定】
         double insurance = 1400; //三险一金【公积金+医保】
         double children = 0;//子女
